@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+section{
+  height:700px
+}
+.text-brand{
+  color:rgb(219, 167, 235)
+}
 
 .App-logo {
   height: 40vmin;
