@@ -6,7 +6,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const AddAdmin = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data =>{
-        fetch('http://localhost:4000/addAdmin',{
+        fetch('https://mighty-ocean-08818.herokuapp.com/addAdmin',{
         method:'POST',
         headers:{ 'content-type': 'application/json'},
         body:JSON.stringify(data)

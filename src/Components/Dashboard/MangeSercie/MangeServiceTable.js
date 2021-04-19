@@ -4,7 +4,7 @@ const MangeServiceTable = ({service,index}) => {
     const {_id,name} = service;
     const deleteProduct = id =>{
         console.log(id);
-        const url =`http://localhost:4000/deleteService/${_id}`;
+        const url =`https://mighty-ocean-08818.herokuapp.com/deleteService/${_id}`;
         fetch(url,{
             method: 'DELETE',
         })

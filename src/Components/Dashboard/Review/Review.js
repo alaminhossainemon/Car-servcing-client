@@ -9,7 +9,7 @@ const Review = () => {
             name:data.name,
             description:data.description
         }
-        fetch('http://localhost:4000/addReviews',{
+        fetch('https://mighty-ocean-08818.herokuapp.com/addReviews',{
         method: 'POST', 
         headers: {
           'content-type': 'application/json'

@@ -11,7 +11,7 @@ const DashboardMain = () => {
   const [services, setServices] = useState([]);
   const{id} = useParams();
   useEffect(()=>{
-    fetch('http://localhost:4000/services')
+    fetch('https://mighty-ocean-08818.herokuapp.com/services')
     .then(response => response.json())
     .then(data =>setServices(data))
 
@@ -29,7 +29,7 @@ const DashboardMain = () => {
       orders,
       paymentId
     }
-    fetch('http://localhost:4000/addOrder',{
+    fetch('https://mighty-ocean-08818.herokuapp.com/addOrder',{
       method:'POST',
       headers:{ 'content-type': 'application/json'},
       body:JSON.stringify(paymentData)

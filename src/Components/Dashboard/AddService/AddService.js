@@ -16,7 +16,7 @@ const MangeService = () => {
         
       };
      
-      fetch('http://localhost:4000/addService',{
+      fetch('https://mighty-ocean-08818.herokuapp.com/addService',{
         method: 'POST', 
         headers: {
           'content-type': 'application/json'
